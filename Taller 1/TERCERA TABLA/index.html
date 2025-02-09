@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factura</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        .header {
+            background-color: #e40abf;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+        }
+        .right {
+            text-align: right;
+        }
+        .input-box {
+            width: 100%;
+            border: none;
+            background: transparent;
+            text-align: left;
+        }
+        .total {
+            font-weight: bold;
+            text-align: right;
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <tr>
+            <td class="header" colspan="3">SUPERMERCADOS "LA VENDEDORA"</td>
+            <td colspan="2">
+                <strong>N° Fra.:</strong> <input type="text" class="input-box" value="245600"> <br>
+                <strong>Fecha:</strong> <input type="date" class="input-box" value="2011-04-25">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3"><strong>Cliente:</strong> <input type="text" class="input-box" value="Juan Francisco Redrovín"></td>
+            <td colspan="2"><strong>RUC:</strong> <input type="text" class="input-box" value="180456738"></td>
+        </tr>
+        <tr>
+            <td colspan="5"><strong>Dirección:</strong> <input type="text" class="input-box" value="Ambato, Av. Cevallos"></td>
+        </tr>
+        <tr>
+            <th>CÓDIGO</th>
+            <th>CANTIDAD</th>
+            <th>CONCEPTO</th>
+            <th>PRECIO</th>
+            <th>IMPORTE</th>
+        </tr>
+        <tr>
+            <td>A33</td>
+            <td><input type="number" class="input-box" value="20"></td>
+            <td>LÁPICES</td>
+            <td><input type="number" class="input-box" value="25"></td>
+            <td><input type="number" class="input-box" value="500"></td>
+        </tr>
+        <tr>
+            <td>A45</td>
+            <td><input type="number" class="input-box" value="100"></td>
+            <td>BORRADORES</td>
+            <td><input type="number" class="input-box" value="10"></td>
+            <td><input type="number" class="input-box" value="1000"></td>
+        </tr>
+        <tr>
+            <td colspan="4" class="right">Importe:</td>
+            <td><input type="number" class="input-box" value="1500"></td>
+        </tr>
+        <tr>
+            <td colspan="4" class="right">Descuento:</td>
+            <td><input type="number" class="input-box" value="75"></td>
+        </tr>
+        <tr>
+            <td colspan="4" class="right">Base imponible:</td>
+            <td><input type="number" class="input-box" value="1425"></td>
+        </tr>
+        <tr>
+            <td colspan="4" class="right">IVA:</td>
+            <td><input type="number" class="input-box" value="218"></td>
+        </tr>
+        <tr>
+            <th colspan="4" class="total">TOTAL FACTURA:</th>
+            <th class="total"><input type="number" class="input-box" value="1643"></th>
+        </tr>
+    </table>
+
+</body>
+</html>

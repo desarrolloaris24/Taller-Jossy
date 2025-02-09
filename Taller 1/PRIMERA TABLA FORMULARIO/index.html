@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Estructurado</title>
+    <style>
+        .seccion{
+            border: 300px;
+            padding: 2px solid #000;
+            margin-bottom: 10px;
+        }
+        label{
+            display: block;
+            margin-top: 5px;
+        }
+        input{
+            width: 15%;
+            padding: 5px;
+            margin-top: 2px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Formulario estructurado</h2>
+    <div class="Formulario">
+        <div class="seccion">
+            <h3>Datos personales</h3>
+            <label>Nombre</label>
+            <input type="text" name="nombre">
+            <label>Apellidos</label>
+            <input type="text" name="apellidos">
+            <label>DNI</label>
+            <input type="text" name="dni">
+        </div>
+
+        <div class="seccion">
+                <h3>Datos de conexión</h3>
+                <label>Nombre de Usuario</label>
+                <input type="text" name="usuario">
+                <label>Contraseña</label>
+                <input type="password" name="password">
+                <label>Repite la Contraseña</label>
+                <input type="password" name="repetir_password"> <br>
+                <button type="submit">enviar datos</button>
+                <button type="reset">borrar datos</button>
+        </div>
+    </div>
+
+</body>
+</html>
